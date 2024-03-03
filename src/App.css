@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+template
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bg-mine{
+  background-color: #0fae0f !important;
+  color: white !important;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.color-mine{
+  color: #0fae0f !important;
+}
+
+.star{
+  color: #ffc908;
+}
+.card_edite{
+  padding: 8px ; 
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s all;
+}
+.card_edite:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;      
+
+}
+
+.transetion_transform{
+  transform: translatey(250px);
+}
+.card_edite:hover  .transetion_transform{    
+  transform: translatey(0%);
+  transition: 0.3s all;
+
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+  animation: prixClipFix 2s linear infinite ;
+}
+
+@keyframes rotate {
+  100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+.w-edite{
+  height:  80vh !important;
+}
+.margin-top{
+  margin-top: 100px !important;
+}
+.fit-img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  -moz-object-fit: cover;
+  -o-object-fit: cover;
+  -ms-object-fit: cover;
+  -webkit-object-fit: cover;
+}
+.grab{
+  cursor: grab;
+}
+.border-bottom-1{
+  border-bottom: .5px solid #c8c8c8 !important;
+}
+.border-main{
+  border: 1px solid #0fae0f !important;
+}
+.fs-sm{
+  font-size: 10px !important;
+}
